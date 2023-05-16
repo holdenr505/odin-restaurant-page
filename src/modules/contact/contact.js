@@ -49,7 +49,7 @@ function createContact() {
   const messageInput = createHTMLElement("textarea", {
     id: "message",
     rows: 10,
-    cols: 40,
+    cols: 30,
   });
   const messageDiv = createHTMLElement(
     "div",

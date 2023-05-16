@@ -1,0 +1,77 @@
+header {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    box-shadow: 0 1px 3px var(--header-footer-color);
+    background-color: white;
+}
+
+#logo {
+    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    font-family: "Architects Daughter";
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav-list {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+#nav-list > li {
+    padding: 0 20px;
+    border-right: 2px solid orange;
+}
+
+#nav-list > li:last-child {
+    border: none;
+}
+
+#open-button {
+    display: none;
+}
+
+#close-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #logo > img {
+        width: 50px;
+    }
+
+    header {
+        grid-template-columns: auto 1fr;
+    }
+
+    nav {
+        display: none;
+        place-self: start;
+    }
+
+    .menu-active {
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+
+    #nav-list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    #nav-list > li {
+        border: none;
+    }
+
+    #open-button {
+        display: inline;
+        margin-left: auto;
+    }
+}

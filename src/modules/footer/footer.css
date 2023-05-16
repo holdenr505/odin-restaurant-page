@@ -1,0 +1,25 @@
+footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid var(--header-footer-color);
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-div:last-child > ul {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    footer > div {
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}

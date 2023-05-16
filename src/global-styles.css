@@ -1,0 +1,50 @@
+:root {
+    --font-color: rgb(50, 50, 50);
+    --header-footer-color: rgb(65, 65, 65);
+
+    font-family: "Lato";
+    color: var(--font-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
