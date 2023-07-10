@@ -1,0 +1,36 @@
+.menu-container {
+    margin: 20px;
+    width: 50%;
+}
+
+.menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-heading > img {
+    width: 25px;
+}
+
+.item-container {
+    display: grid;
+    grid-template-areas:
+    "name price"
+    "description .";
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.item-container > h4 {
+    grid-area: name;
+}
+
+.item-container > p {
+    grid-area: description;
+}
+
+.item-container > div {
+    grid-area: price;
+}
