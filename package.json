@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx webpack --watch",
+    "start": "webpack serve --open",
     "build": "webpack"
   },
   "repository": {
@@ -20,11 +21,13 @@
   },
   "homepage": "https://github.com/omni23/odin-restaurant-page#readme",
   "devDependencies": {
+    "css-loader": "^6.7.3",
     "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "prettier": "2.8.8",
+    "style-loader": "^3.3.2",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1"
   }
