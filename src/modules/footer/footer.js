@@ -75,7 +75,7 @@ function createFooter() {
     )
   );
 
-  const container = createHTMLElement(
+  const infoContainer = createHTMLElement(
     "div",
     "",
     hoursContainer,
@@ -83,7 +83,60 @@ function createFooter() {
     socialsContainer
   );
 
-  const footer = createHTMLElement("footer", "", container);
+  const creditLinks = [
+    createHTMLElement("a", { href: "https://www.icons8.com" }, "icons8"),
+    createHTMLElement(
+      "a",
+      { href: "https://unsplash.com/@louishansel" },
+      "Louis Hansel"
+    ),
+    createHTMLElement(
+      "a",
+      { href: "https://unsplash.com/@mahmoud_fawzy100" },
+      "Mahmoud Fawzy"
+    ),
+    createHTMLElement(
+      "a",
+      { href: "https://unsplash.com/@mggbox" },
+      "Mgg Vitchakorn"
+    ),
+    createHTMLElement(
+      "a",
+      { href: "https://unsplash.com/@xtraincglobal" },
+      "Xtra, Inc."
+    ),
+    createHTMLElement("a", { href: "https://www.unsplash.com" }, "Unsplash"),
+  ];
+
+  const iconsCredit = createHTMLElement(
+    "div",
+    { class: "credit-div" },
+    "Icons by ",
+    creditLinks[0]
+  );
+
+  const photosCredit = createHTMLElement(
+    "div",
+    { class: "credit-div" },
+    "Photos by ",
+    creditLinks[1],
+    ", ",
+    creditLinks[2],
+    ", ",
+    creditLinks[3],
+    ", ",
+    creditLinks[4],
+    " on ",
+    creditLinks[5]
+  );
+
+  const footer = createHTMLElement(
+    "footer",
+    "",
+    infoContainer,
+    iconsCredit,
+    photosCredit
+  );
 
   content.appendChild(footer);
 }

@@ -1,7 +1,7 @@
 import createHTMLElement from "../helpers/helpers";
 import "./header.css";
 import logo from "./logo.png";
-import hamburger from "./icon-menu.svg";
+import hamburgerIcon from "./icon-menu.svg";
 
 function createHeader() {
   const content = document.querySelector("#content");
@@ -31,10 +31,10 @@ function createHeader() {
       "a",
       { id: "logo", href: "#" },
       createHTMLElement("img", { src: logo }),
-      createHTMLElement("div", "", "Cool Restaurant")
+      createHTMLElement("div", "", "Sushi Express")
     ),
     createHTMLElement("img", {
-      src: hamburger,
+      src: hamburgerIcon,
       alt: "open navigation",
       id: "open-button",
     }),
