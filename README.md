@@ -15,4 +15,4 @@ This project was developed for the Odin Project's Javascript course. The purpose
 
 ### Live Demo
 
-- Live Site URL: [Live Site](https://omni23.github.io/odin-restaurant-page)
+- Live Site URL: [Live Site](https://where-da-bones.github.io/odin-restaurant-page)
